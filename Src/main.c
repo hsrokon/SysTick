@@ -29,6 +29,7 @@ void SysTick_Handler(void){
 void delay_ms(uint32_t delay){
 	uint32_t start_time = ms_ticks;
 	while((ms_ticks-start_time)<delay){
-		//waiting for desired delay time has elapsed
+		//Will wait till desired delay time elapses
+		//Creates a non-blocking delay
 	}
 }
