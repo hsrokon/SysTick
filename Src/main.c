@@ -18,12 +18,17 @@ int main (void){
 
 	while(1){
 		//main loop
-
 	}
-
 }
 
 //Enabling TICKINT, CPU will need SysTick handler every time timer hits 0.
 void SysTick_Handler(void){
 	ms_ticks++;//increment every 1ms.
+}
+
+void delay_ms(uint32_t delay){
+	uint32_t start_time = ms_ticks;
+	while((ms_ticks-start_time)<delay){
+		//waiting for desired delay time has elapsed
+	}
 }
