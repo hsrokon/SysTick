@@ -9,7 +9,7 @@ volatile uint32_t ms_ticks=0;
 //volatile to tell compiler this var can change, so it does not cache a var value in a CPU reg
 //uint32_t ensures var holds a + 32 bit wide integer, predictable size for different computer architecture
 
-int systick_init (void){
+void systick_init (void){
 
 	SYST_RVR=71999; //72MHz /1000(ms)=72000
 	SYST_CVR=0; //Forcing current value reg to force reload

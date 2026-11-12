@@ -19,6 +19,8 @@ void uart_send_char(char c){
 	USART1->DR=c;
 }
 
-void uart_send_string(){
-	//needs to be configured
+void uart_send_string(const char *string){//here "*" is a pointer, points to mem address where string starts
+	while(*string){//here"*" is a dereference operator, which can access or modify the stored value at that address
+		uart_send_char(*string++);//first sends the single character then increments
+	}
 }
