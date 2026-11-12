@@ -53,6 +53,54 @@ Discarded input sections
  .ARM.exidx     0x00000000       0x10 /opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
  .ARM.attributes
                 0x00000000       0x1b /opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .group         0x00000000        0xc ./Src/clock.o
+ .text          0x00000000        0x0 ./Src/clock.o
+ .data          0x00000000        0x0 ./Src/clock.o
+ .bss           0x00000000        0x0 ./Src/clock.o
+ .text.clock_init_72mhz
+                0x00000000       0xb0 ./Src/clock.o
+ .debug_info    0x00000000      0x1a8 ./Src/clock.o
+ .debug_abbrev  0x00000000       0xa3 ./Src/clock.o
+ .debug_aranges
+                0x00000000       0x20 ./Src/clock.o
+ .debug_rnglists
+                0x00000000       0x14 ./Src/clock.o
+ .debug_macro   0x00000000       0xc6 ./Src/clock.o
+ .debug_macro   0x00000000      0xad8 ./Src/clock.o
+ .debug_macro   0x00000000       0x28 ./Src/clock.o
+ .debug_macro   0x00000000       0x22 ./Src/clock.o
+ .debug_macro   0x00000000       0x22 ./Src/clock.o
+ .debug_macro   0x00000000       0x8e ./Src/clock.o
+ .debug_macro   0x00000000       0x51 ./Src/clock.o
+ .debug_macro   0x00000000      0x103 ./Src/clock.o
+ .debug_macro   0x00000000       0x6a ./Src/clock.o
+ .debug_macro   0x00000000      0x1df ./Src/clock.o
+ .debug_macro   0x00000000       0x1c ./Src/clock.o
+ .debug_macro   0x00000000       0x22 ./Src/clock.o
+ .debug_macro   0x00000000       0xbd ./Src/clock.o
+ .debug_macro   0x00000000      0xd23 ./Src/clock.o
+ .debug_macro   0x00000000     0xe09e ./Src/clock.o
+ .debug_macro   0x00000000       0x6d ./Src/clock.o
+ .debug_line    0x00000000      0x453 ./Src/clock.o
+ .debug_str     0x00000000    0x54708 ./Src/clock.o
+ .comment       0x00000000       0x44 ./Src/clock.o
+ .debug_frame   0x00000000       0x30 ./Src/clock.o
+ .ARM.attributes
+                0x00000000       0x2d ./Src/clock.o
  .group         0x00000000        0xc ./Src/main.o
  .group         0x00000000        0xc ./Src/main.o
  .group         0x00000000        0xc ./Src/main.o
@@ -73,6 +121,21 @@ Discarded input sections
  .text          0x00000000        0x0 ./Src/main.o
  .data          0x00000000        0x0 ./Src/main.o
  .bss           0x00000000        0x0 ./Src/main.o
+ .debug_macro   0x00000000      0xad8 ./Src/main.o
+ .debug_macro   0x00000000       0x28 ./Src/main.o
+ .debug_macro   0x00000000       0x22 ./Src/main.o
+ .debug_macro   0x00000000       0x22 ./Src/main.o
+ .debug_macro   0x00000000       0x8e ./Src/main.o
+ .debug_macro   0x00000000       0x51 ./Src/main.o
+ .debug_macro   0x00000000      0x103 ./Src/main.o
+ .debug_macro   0x00000000       0x6a ./Src/main.o
+ .debug_macro   0x00000000      0x1df ./Src/main.o
+ .debug_macro   0x00000000       0x1c ./Src/main.o
+ .debug_macro   0x00000000       0x22 ./Src/main.o
+ .debug_macro   0x00000000       0xbd ./Src/main.o
+ .debug_macro   0x00000000      0xd23 ./Src/main.o
+ .debug_macro   0x00000000     0xe09e ./Src/main.o
+ .debug_macro   0x00000000       0x6d ./Src/main.o
  .group         0x00000000        0xc ./Src/syscalls.o
  .group         0x00000000        0xc ./Src/syscalls.o
  .group         0x00000000        0xc ./Src/syscalls.o
@@ -586,6 +649,7 @@ Linker script and memory map
 LOAD /opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
 LOAD /opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD /opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.100.202509120712/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o
+LOAD ./Src/clock.o
 LOAD ./Src/main.o
 LOAD ./Src/syscalls.o
 LOAD ./Src/sysmem.o
@@ -902,42 +966,27 @@ LOAD /opt/st/stm32cubeide_2.0.0/plugins/com.st.stm32cube.ide.mcu.externaltools.g
  .debug_rnglists
                 0x00000051       0x19 ./Startup/startup_stm32f103c8tx.o
 
-.debug_macro    0x00000000    0x10122
- .debug_macro   0x00000000       0xce ./Src/main.o
- .debug_macro   0x000000ce      0xad8 ./Src/main.o
- .debug_macro   0x00000ba6       0x10 ./Src/main.o
- .debug_macro   0x00000bb6       0x28 ./Src/main.o
- .debug_macro   0x00000bde       0x22 ./Src/main.o
- .debug_macro   0x00000c00       0x22 ./Src/main.o
- .debug_macro   0x00000c22       0x8e ./Src/main.o
- .debug_macro   0x00000cb0       0x51 ./Src/main.o
- .debug_macro   0x00000d01      0x103 ./Src/main.o
- .debug_macro   0x00000e04       0x6a ./Src/main.o
- .debug_macro   0x00000e6e      0x1df ./Src/main.o
- .debug_macro   0x0000104d       0x1c ./Src/main.o
- .debug_macro   0x00001069       0x22 ./Src/main.o
- .debug_macro   0x0000108b       0xbd ./Src/main.o
- .debug_macro   0x00001148      0xd23 ./Src/main.o
- .debug_macro   0x00001e6b     0xe09e ./Src/main.o
- .debug_macro   0x0000ff09       0x6d ./Src/main.o
- .debug_macro   0x0000ff76       0x10 ./Src/main.o
- .debug_macro   0x0000ff86       0xd7 ./Src/systick.o
- .debug_macro   0x0001005d       0xc5 ./Src/uart.o
+.debug_macro    0x00000000      0x294
+ .debug_macro   0x00000000       0xd8 ./Src/main.o
+ .debug_macro   0x000000d8       0x10 ./Src/main.o
+ .debug_macro   0x000000e8       0x10 ./Src/main.o
+ .debug_macro   0x000000f8       0xd7 ./Src/systick.o
+ .debug_macro   0x000001cf       0xc5 ./Src/uart.o
 
-.debug_line     0x00000000      0xcd2
- .debug_line    0x00000000      0x3ea ./Src/main.o
- .debug_line    0x000003ea      0x42c ./Src/systick.o
- .debug_line    0x00000816      0x441 ./Src/uart.o
- .debug_line    0x00000c57       0x7b ./Startup/startup_stm32f103c8tx.o
+.debug_line     0x00000000      0xcdd
+ .debug_line    0x00000000      0x3f5 ./Src/main.o
+ .debug_line    0x000003f5      0x42c ./Src/systick.o
+ .debug_line    0x00000821      0x441 ./Src/uart.o
+ .debug_line    0x00000c62       0x7b ./Startup/startup_stm32f103c8tx.o
 
-.debug_str      0x00000000    0x5463b
- .debug_str     0x00000000    0x5463b ./Src/main.o
-                              0x546dc (size before relaxing)
- .debug_str     0x0005463b        0x0 ./Src/systick.o
+.debug_str      0x00000000    0x54645
+ .debug_str     0x00000000    0x54645 ./Src/main.o
+                              0x546e6 (size before relaxing)
+ .debug_str     0x00054645        0x0 ./Src/systick.o
                               0x54761 (size before relaxing)
- .debug_str     0x0005463b        0x0 ./Src/uart.o
+ .debug_str     0x00054645        0x0 ./Src/uart.o
                               0x54734 (size before relaxing)
- .debug_str     0x0005463b        0x0 ./Startup/startup_stm32f103c8tx.o
+ .debug_str     0x00054645        0x0 ./Startup/startup_stm32f103c8tx.o
                                  0x7e (size before relaxing)
 
 .comment        0x00000000       0x43

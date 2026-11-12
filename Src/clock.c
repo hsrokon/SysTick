@@ -25,7 +25,7 @@ void clock_init_72mhz(void){
 	RCC->CFGR |= (0x2<<0);// Selected PLL as system clock
 
 	//Checking if PLL is selected as System Clock with SWS=System Control Switch Status, if not selected then wait
-	while((RCC->CFGR & (3<<2)!=(2<<2)));
+	while(( (RCC->CFGR & (3<<2)) !=(2<<2)));
 	//Mask (3<<2)=shift decimal 3 (11 in bin) 2 steps left, which isolates bits 3 and 2 for checking. Then we check it against (2<<2), shifting dec 2 (10 in bin)
 	//10: PLL used as system clock
 }

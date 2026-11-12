@@ -35,17 +35,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_rnglists 0000006a  00000000  00000000  00001b78  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00010122  00000000  00000000  00001be2  2**0
+ 16 .debug_macro  00000294  00000000  00000000  00001be2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00000cd2  00000000  00000000  00011d04  2**0
+ 17 .debug_line   00000cdd  00000000  00000000  00001e76  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0005463b  00000000  00000000  000129d6  2**0
+ 18 .debug_str    00054645  00000000  00000000  00002b53  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  00067011  2**0
+ 19 .comment      00000043  00000000  00000000  00057198  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000014c  00000000  00000000  00067054  2**2
+ 20 .debug_frame  0000014c  00000000  00000000  000571dc  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000062  00000000  00000000  000671a0  2**0
+ 21 .debug_line_str 00000062  00000000  00000000  00057328  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -81,6 +81,7 @@ Disassembly of section .text:
 08000170 <main>:
 #include "systick.h"
 #include "uart.h"
+#include "clock.h"
 
 int main (void){
  8000170:	b580      	push	{r7, lr}
@@ -221,7 +222,7 @@ void uart_init(void){
 
 	//Baud rate for 72MHz (27.3.4) |Cal_1: 72MHz/(16*9600)=468.75 | 468=111010100=0x1D4 | 0.75*16=12(in Hex can be rep as 0xC)=00010010 | 0x1D4C
 	//Cal_2: 72MHz/9600 = 7500 = 0x1D4C
-	USART1->BRR=0x1D4C;
+	USART1->BRR=0x1D4C; // 0x1D4C for 72MHz
  800023c:	4b09      	ldr	r3, [pc, #36]	@ (8000264 <uart_init+0x54>)
  800023e:	f641 524c 	movw	r2, #7500	@ 0x1d4c
  8000242:	609a      	str	r2, [r3, #8]
