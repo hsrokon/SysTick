@@ -8,7 +8,7 @@ void uart_init(void){
 
 	//Baud rate for 72MHz (27.3.4) |Cal_1: 72MHz/(16*9600)=468.75 | 468=111010100=0x1D4 | 0.75*16=12(in Hex can be rep as 0xC)=00010010 | 0x1D4C
 	//Cal_2: 72MHz/9600 = 7500 = 0x1D4C
-	USART1->BRR=0x1D4C;
+	USART1->BRR=0x1D4C; // 0x1D4C for 72MHz
 	USART1->CR1 |=(1<<13)|(1<<3)|(1<<2);
 }
 

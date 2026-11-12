@@ -1,6 +1,6 @@
-#include "stm32f1xx.h" // it includes ST's core device header file, official register definitions etc.
 #include "systick.h"
 #include "uart.h"
+#include "clock.h"
 
 int main (void){
 
