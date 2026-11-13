@@ -4,6 +4,7 @@
 
 int main (void){
 
+	clock_init_72mhz();//initializes HSE and 72MHz clk
 	systick_init(); //initializing our 1ms system timer
 	uart_init();//initializing uart
 
